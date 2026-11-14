@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Sorgente dell'immagine Open Graph. Rigenerare con: node tools/build-og.js -->
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    width: 1200px; height: 630px;
+    background: #0B0B0C;
+    color: #F4F4F2;
+    font-family: "IBM Plex Sans", sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  .grid {
+    position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .glow {
+    position: absolute; top: -280px; right: -140px;
+    width: 760px; height: 760px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(214,244,92,.16), transparent 68%);
+  }
+  .inner {
+    position: relative;
+    height: 100%;
+    padding: 72px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand svg { display: block; }
+  .brand span { font-size: 26px; font-weight: 600; letter-spacing: -.01em; }
+  .brand em { font-style: normal; color: #6E6E6C; font-weight: 400; }
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px; letter-spacing: .2em; text-transform: uppercase;
+    color: #D6F45C; display: flex; align-items: center; gap: 14px;
+    margin-bottom: 28px;
+  }
+  .eyebrow::before { content: ""; width: 34px; height: 1px; background: currentColor; opacity: .6; }
+  h1 {
+    font-family: "Instrument Serif", Georgia, serif;
+    font-size: 76px; line-height: 1.02; letter-spacing: -.02em;
+    font-weight: 400; max-width: 22ch;
+  }
+  .meta {
+    display: flex; gap: 34px;
+    border-top: 1px solid rgba(255,255,255,.12);
+    padding-top: 26px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 15px; letter-spacing: .08em; text-transform: uppercase;
+    color: #A2A2A0;
+  }
+  .meta i { font-style: normal; display: flex; align-items: center; gap: 10px; }
+  .meta i::before { content: ""; width: 5px; height: 5px; border-radius: 50%; background: #D6F45C; }
+</style>
+</head>
+<body>
+  <div class="grid"></div>
+  <div class="glow"></div>
+  <div class="inner">
+    <div class="brand">
+      <svg viewBox="0 0 32 32" width="40" height="40">
+        <rect width="32" height="32" rx="8" fill="#D6F45C" opacity=".1"></rect>
+        <path d="M6 11l3.4 10h2.3L14 14.3 16.3 21h2.3L22 11h-2.5l-2.1 6.9L15.2 11h-2.4l-2.2 6.9L8.5 11z" fill="#D6F45C"></path>
+      </svg>
+      <span>Wevo <em>Digital</em></span>
+    </div>
+
+    <div>
+      <p class="eyebrow">Commerce Content Operations</p>
+      <h1>Design that performs. Systems that scale.</h1>
+    </div>
+
+    <div class="meta">
+      <i>Data Strategy</i>
+      <i>Content Engine</i>
+      <i>Digital Systems</i>
+    </div>
+  </div>
+</body>
+</html>
