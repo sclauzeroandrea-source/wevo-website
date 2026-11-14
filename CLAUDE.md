@@ -13,7 +13,7 @@ Sito one-page di Wevo, statico (HTML, CSS, JS vanilla), pubblicato su Vercel. Qu
 ## Stack: resta com'è
 
 - Niente framework, niente build step. File: `index.html`, `assets/css/styles.css`, `assets/js/main.js`, `api/contact.js`.
-- Riusa il design system esistente in `styles.css` (token, palette nero/bianco caldo, unico accento lime `#D6F45C`, Instrument Serif + IBM Plex Sans/Mono, `.reveal`, `.section`, `.section--alt`). Aggiungi componenti nuovi seguendo le stesse convenzioni, non creare un secondo sistema.
+- Riusa il design system esistente in `styles.css` (token, palette v1: fondo `#E6E5E2`, nero, grafite `#1E1E1E` per le sezioni `.theme-dark`, unico accento menta `#5CFFC8` / menta profonda `#00704E` su chiaro, CTA neutre mai menta, Instrument Serif + IBM Plex Sans/Mono, `.reveal`, `.section`, `.section--alt`). Aggiungi componenti nuovi seguendo le stesse convenzioni, non creare un secondo sistema.
 - Grafica solo SVG inline, nessuna foto stock, nessuna illustrazione "AI" generica.
 - Accessibilità e performance già presenti (skip link, focus visibile, `prefers-reduced-motion`, una sola CSS e una sola JS) vanno mantenute.
 
