@@ -996,32 +996,56 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .start .steps__item h3 { font-family: var(--display); font-weight: 400; font-size: 1.5rem; margin-bottom: 8px; }
 
 /* Team */
-.roles {
+/* Team: bento dei ruoli */
+.tb {
+  list-style: none; margin: 0; padding: 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1px;
-  background: var(--line);
+  gap: 12px;
+}
+.tb__card {
+  position: relative;
+  display: flex; flex-direction: column; gap: 6px;
+  min-height: 132px;
+  padding: 20px;
+  background: var(--bg);
   border: 1px solid var(--line);
-  border-radius: var(--radius);
-  overflow: hidden;
+  border-radius: 18px;
+  transition: border-color .25s var(--ease), transform .25s var(--ease);
 }
-.roles li {
-  background: var(--bg-raised);
-  padding: 22px 22px;
-  font: 400 12.5px/1.4 var(--mono);
-  letter-spacing: .06em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.tb__card:hover { border-color: var(--text); transform: translateY(-2px); }
+.tb__card--wide { grid-column: 1 / -1; min-height: 0; flex-direction: row; align-items: center; gap: 16px; }
+.tb__card--wide .tb__ico { margin-bottom: 0; }
+.tb__card--wide .tb__tag { order: 2; margin-left: auto; }
+.tb__ico {
+  width: 36px; height: 36px; margin-bottom: auto;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 10px; background: #1E1E1E; color: #fff;
 }
-.roles li::before {
-  content: "";
-  width: 6px; height: 6px;
-  flex: none;
-  border: 1px solid var(--accent);
-  transform: rotate(45deg);
+.tb__ico svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.tb__tag { margin-top: 18px; font: 500 10.5px/1 var(--mono); letter-spacing: .16em; text-transform: uppercase; color: var(--accent); }
+.tb__card--wide .tb__tag { margin-top: 0; }
+.tb__role { font: 800 1.22rem/1.12 var(--display); letter-spacing: -.03em; color: var(--text); }
+
+.tb__card--dev {
+  grid-column: 1 / -1;
+  flex-direction: row; align-items: center; gap: 20px;
+  min-height: 0; padding: 22px 24px;
+  background: var(--bg); border-color: var(--bg);
+}
+.tb__card--dev:hover { border-color: var(--accent); }
+.tb__num { font: 800 clamp(4rem, 7vw, 5.4rem)/.8 var(--display); letter-spacing: -.06em; color: var(--accent); }
+.tb__devmeta { display: flex; flex-direction: column; gap: 8px; }
+.tb__devmeta .tb__tag { margin-top: 0; }
+.tb__card--dev .tb__role { font-size: 1.6rem; }
+.tb__chips { margin-left: auto; display: grid; grid-template-columns: repeat(2, 36px); gap: 6px; }
+.tb__chips span { width: 36px; height: 36px; border-radius: 10px; border: 1px solid var(--line-strong); display: flex; align-items: center; justify-content: center; color: var(--text); }
+.tb__chips svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+
+@media (max-width: 560px) {
+  .tb__card--wide { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .tb__card--wide .tb__tag { order: 0; margin: 18px 0 0; }
+  .tb__chips { display: none; }
 }
 .forwho { margin-top: clamp(72px, 9vw, 120px); }
 .section--alt .niche { background: var(--bg-alt); }
@@ -1739,7 +1763,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .beforeafter,
   .cards--2,
   .case__steps,
-  .roles { grid-template-columns: minmax(0, 1fr); }
 
   /* Confronto: righe come card impilate */
   .compare { border: 0; border-radius: 0; overflow: visible; }
