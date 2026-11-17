@@ -21,7 +21,7 @@ Copy per la home del sito Wevo, pensato anche come landing di processo: segue la
 
 **Regole fisse applicate**
 
-- Eataly e Lavazza non sono nominati: si usa la formula del team manageriale su brand food globali.
+- Eataly e Lavazza non sono nominati, né il settore food: si parla di manager che gestiscono l'e-commerce di grandi brand dall'interno.
 - Nessun numero Thermore nel copy. I campi `[DA APPROVARE]` vanno riempiti solo con l'ok del cliente.
 - Niente prezzi né "risparmio". "AI" non compare mai in un titolo.
 - I campi tra parentesi quadre sono segnaposto da completare prima della pubblicazione.
@@ -38,7 +38,6 @@ Copy per la home del sito Wevo, pensato anche come landing di processo: segue la
 
 **CTA secondaria:** Guarda come funziona la pipeline ↓
 
-**Riga di fiducia (sotto le CTA):** Team guidato da manager che gestiscono oggi l'e-commerce di brand food globali tra Europa e Stati Uniti.
 
 **Varianti H1 da testare** (il claim resta come eyebrow o payoff)
 
@@ -119,7 +118,7 @@ Copy per la home del sito Wevo, pensato anche come landing di processo: segue la
 
 | | Come scala | Cosa manca | Con Wevo |
 | --- | --- | --- | --- |
-| Agenzia creativa | Aggiunge persone | Sistemi e dati | Il processo scala, il team no |
+| Agenzia creativa | Aggiunge persone | Sistemi e dati | Il processo scala |
 | System integrator | Integra piattaforme | Contenuti e performance | Contenuti e sistemi in un solo team |
 | Tool AI | Genera volume | Controllo, integrazione nello stack | Persone nel loop, pipeline che scrivono su PIM e feed |
 | Team interno | Fa tutto in casa | Capacità sui picchi, time-to-market | Capacità industriale quando serve |
@@ -174,7 +173,7 @@ Copy per la home del sito Wevo, pensato anche come landing di processo: segue la
 
 **H2:** Metodo enterprise, velocità boutique.
 
-**Testo:** Wevo nasce nel 2025, dopo cinque anni di consulenza dei due fondatori. Il team è guidato da manager che gestiscono oggi l'e-commerce di brand food globali tra Europa e Stati Uniti: replatforming Shopify e Salesforce, PIM custom, integrazioni worldwide. Portiamo lo stesso metodo a brand che vogliono muoversi più in fretta.
+**Testo:** Wevo nasce nel 2025, dopo cinque anni di consulenza dei due fondatori. Il team è guidato da manager che gestiscono ogni giorno l'e-commerce di grandi brand, dall'interno: replatforming Shopify e Salesforce, PIM custom, integrazioni tra paesi. Portiamo quell'esperienza ai brand che vogliono crescere senza ripartire da zero.
 
 **Ruoli in griglia:** Head of Design · Project Manager · 4 Developer · AI Strategist / Head of Innovation · Head of Media Buying · Data Strategist
 

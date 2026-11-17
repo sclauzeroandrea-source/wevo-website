@@ -21,7 +21,7 @@ Sito one-page di Wevo, statico (HTML, CSS, JS vanilla), pubblicato su Vercel. Qu
 
 | # | Sezione | id | Note |
 | --- | --- | --- | --- |
-| 1 | Hero | — | eyebrow mono, H1 serif, sottotitolo, CTA primaria → `#diagnosis`, CTA secondaria → `#content-engine`, riga di fiducia |
+| 1 | Hero | — | eyebrow mono, H1 serif, sottotitolo, CTA primaria → `#diagnosis`, CTA secondaria → `#content-engine` |
 | 2 | Problema | `#problema` | 3 card + frase ponte |
 | 3 | Il motore | `#motore` | grafica SVG del ciclo: 3 fasi in fila + freccia di ritorno da Digital Systems a Data Strategy; Content Engine evidenziato con l'accento; poi 3 card |
 | 4 | Wevo Content Engine | `#content-engine` | 3 blocchi USP, flusso pipeline in 4 step orizzontale (verticale su mobile), box prima/dopo come placeholder |

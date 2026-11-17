@@ -297,3 +297,13 @@
     });
   }
 })();
+
+/* Hero: scala la scena 640×560 alla larghezza della colonna */
+(function () {
+  var box = document.querySelector('.hx');
+  if (!box) return;
+  function fit() { box.style.setProperty('--hx-scale', (box.clientWidth / 640).toFixed(4)); }
+  fit();
+  if ('ResizeObserver' in window) new ResizeObserver(fit).observe(box);
+  else window.addEventListener('resize', fit);
+})();
