@@ -119,7 +119,7 @@ Copy per la home del sito Wevo, pensato anche come landing di processo: segue la
 
 | | Come scala | Cosa manca | Con Wevo |
 | --- | --- | --- | --- |
-| Agenzia creativa | Aggiunge persone | Sistemi e dati | Il processo scala, il team no |
+| Agenzia creativa | Aggiunge persone | Sistemi e dati | Il processo scala |
 | System integrator | Integra piattaforme | Contenuti e performance | Contenuti e sistemi in un solo team |
 | Tool AI | Genera volume | Controllo, integrazione nello stack | Persone nel loop, pipeline che scrivono su PIM e feed |
 | Team interno | Fa tutto in casa | Capacità sui picchi, time-to-market | Capacità industriale quando serve |
