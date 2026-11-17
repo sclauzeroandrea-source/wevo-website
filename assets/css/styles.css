@@ -42,6 +42,7 @@
   --danger-wash:   rgba(180, 35, 24, .06);
 
   /* Type */
+  --display: "Inter Tight", "Helvetica Neue", Arial, sans-serif;
   --serif:  "Instrument Serif", "Iowan Old Style", Georgia, "Times New Roman", serif;
   --sans:   "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --mono:   "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
@@ -156,7 +157,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
    ========================================================= */
 
 .display {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: clamp(2.6rem, 6.2vw, 4.5rem);
   line-height: 1.03;
   letter-spacing: -.02em;
@@ -165,7 +166,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 
 .h2 {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: clamp(1.95rem, 4vw, 3rem);
   line-height: 1.08;
   letter-spacing: -.018em;
@@ -350,7 +351,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .hero__title { font-size: clamp(2.5rem, 5.2vw, 4.1rem); }
 .hero__title em {
   display: inline;
-  font-style: italic;
+  font-style: normal;
   color: var(--accent-ink);
   background: var(--accent-fill); /* evidenziatore menta */
   padding: 0 .12em;
@@ -470,7 +471,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 /* Frase ponte / chiusura di sezione */
 .bridge {
   margin-top: clamp(40px, 5vw, 64px);
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: clamp(1.4rem, 2.6vw, 2rem);
   line-height: 1.2;
   max-width: 34ch;
@@ -529,7 +530,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .cycle__num { font: 500 12px var(--mono); letter-spacing: .14em; fill: var(--text-dim); }
 .cycle__node--main .cycle__num { fill: var(--accent); }
-.cycle__name { font: 400 24px var(--serif); fill: var(--text); }
+.cycle__name { font: 800 22px var(--display); letter-spacing: -.03em; fill: var(--text); }
 .cycle__note { font: 400 13px var(--sans); fill: var(--text-muted); }
 .cycle__loop { font: 400 12px var(--mono); letter-spacing: .04em; fill: var(--text-muted); }
 
@@ -545,7 +546,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .usp { background: var(--bg-raised); padding: clamp(26px, 3vw, 36px); }
 .usp__title {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 1.55rem;
   line-height: 1.15;
   margin-bottom: 14px;
@@ -646,7 +647,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   background: var(--bg-alt);
 }
 .compare__table tbody th {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-weight: 400;
   font-size: 1.3rem;
   line-height: 1.2;
@@ -672,7 +673,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .case__brand .logo-img { opacity: .85; }
 .case__brand:hover .logo-img { opacity: 1; }
 .case__title {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: clamp(1.6rem, 3vw, 2.2rem);
   line-height: 1.12;
   text-wrap: balance;
@@ -737,7 +738,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .start .steps { margin-top: 0; }
 .start .steps__item { padding: 26px 0; }
 .start .steps__num { color: var(--accent); }
-.start .steps__item h3 { font-family: var(--serif); font-weight: 400; font-size: 1.5rem; margin-bottom: 8px; }
+.start .steps__item h3 { font-family: var(--display); font-weight: 400; font-size: 1.5rem; margin-bottom: 8px; }
 
 /* Team */
 .roles {
@@ -847,7 +848,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 
 /* Footer */
 .footer__payoff {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 1.2rem;
   color: var(--text) !important;
 }
@@ -875,7 +876,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 
 .card__title {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 1.6rem;
   line-height: 1.15;
   margin-bottom: 14px;
@@ -935,7 +936,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   margin-bottom: 26px;
 }
 .niche__title {
-  font-family: var(--serif);
+  font-family: var(--display);
   font-size: 1.45rem;
   line-height: 1.15;
   margin-bottom: 12px;
@@ -1198,7 +1199,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   padding: clamp(20px, 4vw, 44px) 10px;
 }
 .form__success svg { color: var(--accent); }
-.form__success h3 { font-family: var(--serif); font-size: 1.8rem; }
+.form__success h3 { font-family: var(--display); font-size: 1.8rem; }
 .form__success p { color: var(--text-muted); max-width: 40ch; }
 .form__success .btn { margin-top: 10px; }
 
@@ -1240,6 +1241,17 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   letter-spacing: .04em;
   color: var(--text-dim);
 }
+
+
+/* Titoli: Inter Tight 800, vicino al logotipo wevo (anteprima) */
+.display, .h2, .bridge, .usp__title, .compare__table tbody th, .case__title,
+.start .steps__item h3, .footer__payoff, .card__title, .niche__title, .form__success h3 {
+  font-weight: 800;
+  letter-spacing: -.035em;
+}
+.display { line-height: 1.06; }
+.hero__title { font-size: clamp(2.4rem, 4.4vw, 3.5rem); letter-spacing: -.04em; }
+.h2 { line-height: 1.04; }
 
 /* =========================================================
    Content Engine — nastro di produzione
