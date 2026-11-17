@@ -131,17 +131,17 @@ Copy per la home del sito Wevo, pensato anche come landing di processo: segue la
 
 **Caso principale — Thermore** (raccontato come processo, non come elenco di servizi)
 
-**Titolo:** Thermore: un'eccellenza del B2B fashion italiano, trasformata dal dato alla pipeline.
+**Titolo:** Thermore: abbiamo avviato la trasformazione digitale di un'eccellenza del B2B fashion italiano.
 
-**Intro:** Thermore produce imbottiture termiche per i brand della moda di tutto il mondo. Insieme stiamo costruendo il sistema digitale che ne sostiene la crescita.
+**Intro:** Thermore produce imbottiture termiche per i brand della moda di tutto il mondo. Il percorso parte dal dato, passa dalle proposte creative e arriva a un sistema digitale costruito su misura.
 
 | Fase | Cosa abbiamo fatto |
 | --- | --- |
-| Data | Tracciamento server-side e multi-touchpoint. Brand study comparativi sul mercato. |
-| Content Engine | Pipeline creative e scrittura delle schede prodotto, con validazione del team. |
-| Digital Systems | Sito custom multi-paese, con strategia di conversione pensata per il B2B. |
+| Data | Tracciamento server-side e multi-touchpoint: prima di produrre, misuriamo. |
+| Content Engine | Brand study comparativo sul mercato e prime proposte di pipeline creative per prodotto e comunicazione. |
+| Digital Systems | Sviluppo del sito custom multi-paese, con una strategia di conversione pensata per il B2B. |
 
-**Risultato [DA APPROVARE con Thermore]:** crescita della community social [numero], metriche pipeline [SKU/giorno, tempi].
+**Risultato [DA APPROVARE con Thermore]:** crescita della community social [numero], primi dati del nuovo sito [da definire].
 
 **CTA:** Leggi il caso completo →
 
