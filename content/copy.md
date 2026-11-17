@@ -38,7 +38,6 @@ Copy per la home del sito Wevo, pensato anche come landing di processo: segue la
 
 **CTA secondaria:** Guarda come funziona la pipeline ↓
 
-**Riga di fiducia (sotto le CTA):** Team guidato da manager che gestiscono oggi l'e-commerce di brand food globali tra Europa e Stati Uniti.
 
 **Varianti H1 da testare** (il claim resta come eyebrow o payoff)
 
