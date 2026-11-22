@@ -744,6 +744,23 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   margin-bottom: 14px;
 }
 .beforeafter__label--accent { color: var(--accent); }
+.beforeafter__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg);
+}
+.beforeafter__grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
 
 /* Perché Wevo: confronto */
 .compare {
