@@ -106,7 +106,14 @@ Copy per la home del sito Wevo, pensato anche come landing di processo: segue la
 
 **Microcopy sotto il flusso:** Niente copia-incolla. Niente passaggi tra fornitori.
 
-**Blocco prima/dopo [DA PREPARARE]:** una scheda prodotto e una creatività prima e dopo la pipeline. Il visual pesa più di qualsiasi testo.
+**Blocco prima/dopo [DA APPROVARE]:** un master, tutte le uscite. Il visual pesa più di qualsiasi testo.
+
+- Titolo: Una foto prodotto. Tutte le sue uscite.
+- Contatore: 1 → 10 · uscite dallo stesso master
+- Prima · una pagina — nota: 1 canale · 1 formato · 1 lingua per volta. Ogni nuova uscita è un nuovo shooting
+- Dopo · lo stesso master, ovunque — master: Master · SKU 0001, 1 foto · scheda tecnica, regole di brand
+- Uscite: PDP · Sito (IT, DE), Marketplace, Feed 4:5, Story 9:16, Meta 1:1, Display 16:9, Pinterest 2:3, Catalogo PDF, Email
+- Nota: Sito, marketplace, social, adv e stampa nello stesso lotto · validato da un editor
 
 ## 5. Perché Wevo
 
