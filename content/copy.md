@@ -140,13 +140,13 @@ Copy per la home del sito Wevo, pensato anche come landing di processo: segue la
 
 **Titolo:** Thermore: abbiamo avviato la trasformazione digitale di un'eccellenza del B2B fashion italiano.
 
-**Intro:** Thermore produce imbottiture termiche per i brand della moda di tutto il mondo. Il percorso parte dal dato, passa dalle proposte creative e arriva a un sistema digitale costruito su misura.
+**Intro:** Imbottiture termiche per i brand della moda di tutto il mondo. Dal dato alle creatività, fino a un sito su misura.
 
 | Fase | Cosa abbiamo fatto |
 | --- | --- |
-| Data | Tracciamento server-side e multi-touchpoint: prima di produrre, misuriamo. |
-| Content Engine | Brand study comparativo sul mercato e prime proposte di pipeline creative per prodotto e comunicazione. |
-| Digital Systems | Sviluppo del sito custom multi-paese, con una strategia di conversione pensata per il B2B. |
+| Data | Tracciamento server-side multi-touchpoint: prima misuriamo. |
+| Content Engine | Brand study sul mercato e prime pipeline creative. |
+| Digital Systems | Sito custom multi-paese, pensato per convertire nel B2B. |
 
 **Risultato [DA APPROVARE con Thermore]:** crescita della community social [numero], primi dati del nuovo sito [da definire].
 

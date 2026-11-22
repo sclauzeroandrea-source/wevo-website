@@ -1999,7 +1999,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .flow__step::after { display: none; }
 
   .case { padding: 24px 20px; overflow: hidden; }
-  .case__intro { display: none; }
   .case__steps {
     background: none;
     border: 0;
@@ -2011,7 +2010,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
     scroll-padding-inline: 20px;
   }
   .case__steps li {
-    flex: 0 0 72%;
+    flex: 0 0 68%;
     scroll-snap-align: start;
     border: 1px solid var(--line);
     border-radius: var(--radius-sm);
