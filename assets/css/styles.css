@@ -1123,6 +1123,27 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .case__cta { font-size: .95rem; color: var(--text); }
 
 .cases-more { margin-top: 20px; }
+.case-mini__head {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  pointer-events: none;
+}
+.case-mini__head::-webkit-details-marker { display: none; }
+.case-mini__head .card__index { margin: 0; }
+.case-mini__head::after {
+  content: "+";
+  display: none;
+  flex: none;
+  font: 400 20px/1 var(--mono);
+  color: var(--accent);
+  transition: transform .25s var(--ease);
+}
+.case-mini[open] .case-mini__head::after { transform: rotate(45deg); }
+.case-mini .card__body { margin-top: 14px; }
+.case-mini__link { display: inline-block; margin-top: 14px; font-size: .9rem; }
 .cases-more .card__index { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; }
 
 .logos__head {
@@ -1449,11 +1470,10 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .wordmark--h { font: 500 1.2rem/1 var(--sans); letter-spacing: .04em; text-transform: uppercase; font-size: 1.05rem; }
 
 
-/* Clienti: nastro di loghi che scorre da sinistra a destra */
+/* Clienti: nastro di loghi che scorre da destra a sinistra, senza bordi */
 .marquee {
   display: flex;
   overflow: hidden;
-  border-block: 1px solid var(--line);
   -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
           mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
@@ -1473,11 +1493,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   min-height: 112px;
   min-width: 240px;
   background: transparent !important;
-  border-right: 1px solid var(--line);
+  border: 0;
 }
-@keyframes marquee-ltr { from { transform: translateX(-100%); } to { transform: translateX(0); } }
+@keyframes marquee-rtl { from { transform: translateX(0); } to { transform: translateX(-100%); } }
 @media (prefers-reduced-motion: no-preference) {
-  .logos--marquee { animation: marquee-ltr 36s linear infinite; }
+  .logos--marquee { animation: marquee-rtl 36s linear infinite; }
   .marquee:hover .logos--marquee,
   .marquee:focus-within .logos--marquee { animation-play-state: paused; }
 }
@@ -1956,10 +1976,62 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
     letter-spacing: .02em;
   }
 
-  .flow { grid-template-columns: minmax(0, 1fr); }
+  /* Pipeline e fasi Thermore: card in scroll orizzontale con snap */
+  .flow,
+  .case__steps {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin-inline: calc(var(--gutter) * -1);
+    padding: 2px var(--gutter) 6px;
+    scroll-padding-inline: var(--gutter);
+  }
+  .flow::-webkit-scrollbar,
+  .case__steps::-webkit-scrollbar { display: none; }
+  .flow__step {
+    flex: 0 0 78%;
+    scroll-snap-align: start;
+  }
   .flow__step::after { display: none; }
-  .cards--2,
-  .case__steps,
+
+  .case { padding: 24px 20px; overflow: hidden; }
+  .case__intro { display: none; }
+  .case__steps {
+    background: none;
+    border: 0;
+    border-radius: 0;
+    overflow-x: auto;
+    margin-top: 24px;
+    margin-inline: -20px;
+    padding-inline: 20px;
+    scroll-padding-inline: 20px;
+  }
+  .case__steps li {
+    flex: 0 0 72%;
+    scroll-snap-align: start;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    padding: 18px 18px 20px;
+  }
+  .case__steps li p:last-child { font-size: .9rem; }
+  .case__step--accent { border-color: var(--accent-line) !important; }
+  .case__foot { margin-top: 20px; }
+
+  /* Casi secondari: accordion */
+  .cards--2 { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .case-mini { padding: 0; }
+  .case-mini:hover { transform: none; }
+  .case-mini__head { cursor: pointer; pointer-events: auto; padding: 20px 22px; }
+  .case-mini__head::after { display: block; }
+  .case-mini > .card__body,
+  .case-mini > .case-mini__link { margin-inline: 22px; }
+  .case-mini > .card__body { margin-top: 0; }
+  .case-mini > .case-mini__link { margin-bottom: 22px; }
+  .case-mini > .card__body:last-child { margin-bottom: 22px; }
 
   /* Confronto: righe come card impilate */
   .compare { border: 0; border-radius: 0; overflow: visible; }

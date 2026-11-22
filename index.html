@@ -338,7 +338,7 @@
         </article>
       </div>
 
-      <ol class="flow reveal" aria-label="Come lavora una pipeline">
+      <ol class="flow reveal" tabindex="0" aria-label="Come lavora una pipeline">
         <li class="flow__step">
           <span class="flow__num">01</span>
           <h3>Brief dal dato</h3>
@@ -548,7 +548,7 @@
           <p class="case__intro">Thermore produce imbottiture termiche per i brand della moda di tutto il mondo. Il percorso parte dal dato, passa dalle proposte creative e arriva a un sistema digitale costruito su misura.</p>
         </div>
 
-        <ol class="case__steps">
+        <ol class="case__steps" tabindex="0" aria-label="Le tre fasi del progetto Thermore">
           <li>
             <p class="case__phase">Data</p>
             <p>Tracciamento server-side e multi-touchpoint: prima di produrre, misuriamo.</p>
@@ -569,15 +569,17 @@
         </div>
       </article>
 
+      <!-- Card su desktop, accordion su mobile (gestito in main.js) -->
       <div class="cards cards--2 cases-more">
-        <a class="card card--link reveal" href="https://slowweed.ch/" target="_blank" rel="noopener" aria-label="Slowweed, apre il sito in una nuova scheda">
-          <p class="card__index">Slowweed</p>
+        <details class="card case-mini reveal" data-accordion-mobile open>
+          <summary class="case-mini__head"><span class="card__index">Slowweed</span></summary>
           <p class="card__body">Una delle categorie più difficili in advertising, B2B e B2C. Campagne Google rese sostenibili, refactor Shopify, email marketing. Se funziona lì, funziona ovunque.</p>
-        </a>
-        <article class="card reveal">
-          <p class="card__index">PMI in crescita</p>
+          <a class="case-mini__link inline-link" href="https://slowweed.ch/" target="_blank" rel="noopener">slowweed.ch <span aria-hidden="true">↗</span><span class="visually-hidden"> (apre in una nuova scheda)</span></a>
+        </details>
+        <details class="card case-mini reveal" data-accordion-mobile open>
+          <summary class="case-mini__head"><span class="card__index">PMI in crescita</span></summary>
           <p class="card__body"><a class="inline-link" href="https://www.simplybia.com/" target="_blank" rel="noopener">Simply Bia<span class="visually-hidden"> (apre in una nuova scheda)</span></a>, Golfo Paradiso, Manifrers: brand che vogliono scalare online con budget medi. Le stesse fondamenta, a misura.</p>
-        </article>
+        </details>
       </div>
 
       <p class="logos__head reveal">Clienti</p>

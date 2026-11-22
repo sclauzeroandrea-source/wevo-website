@@ -307,3 +307,21 @@
   if ('ResizeObserver' in window) new ResizeObserver(fit).observe(box);
   else window.addEventListener('resize', fit);
 })();
+
+/* Casi secondari: card aperte su desktop, accordion chiuso su mobile */
+(function () {
+  var items = document.querySelectorAll('[data-accordion-mobile]');
+  if (!items.length) return;
+  var mq = window.matchMedia('(max-width: 760px)');
+  function sync() {
+    Array.prototype.forEach.call(items, function (el) { el.open = !mq.matches; });
+  }
+  Array.prototype.forEach.call(items, function (el) {
+    el.querySelector('summary').addEventListener('click', function (e) {
+      if (!mq.matches) e.preventDefault();
+    });
+  });
+  sync();
+  if (mq.addEventListener) mq.addEventListener('change', sync);
+  else if (mq.addListener) mq.addListener(sync);
+})();
