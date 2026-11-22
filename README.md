@@ -124,8 +124,9 @@ Richiede Playwright + Chromium. Il file viene scritto in `assets/img/og-wevo.png
 
 ## Scelte tecniche
 
-- **Palette** monocromatica (nero `#0B0B0C` → bianco caldo `#F4F4F2`) con un solo
-  accento, lime `#D6F45C`.
+- **Palette** v1: fondo `#E6E5E2`, superficie `#FFFFFF`, nero `#000000`, grafite `#1E1E1E`
+  (sezioni `.theme-dark` e footer), un solo accento menta `#5CFFC8` (menta profonda
+  `#00704E` per testo su chiaro). CTA nera su chiaro, bianca su grafite.
 - **Type**: Instrument Serif per i titoli, IBM Plex Sans per il corpo,
   IBM Plex Mono per label ed eyebrow. Caricamento asincrono con `font-display: swap`
   e fallback di sistema.
